@@ -5,20 +5,123 @@
     <meta charset="UTF-8">
     <title>New Year</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
     <style>
+        body {
+            margin: 0;
+        }
         .swiper-wrapper {
-            width: 9999px;
+            width: 7680px;
         }
         .swiper-slide {
             float: left;
             width: 1920px;
             height: 100vh;
         }
+        /* .new-year__item {
+            position: relative;
+        padding-bottom: 56.25%;
+        float: left;
+        width: 100%;
+            margin-top: -200px;
+        }
+        
+        .new-year__item svg {
+        
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        
+        } */
+        
     </style>
 </head>
 
 <body id="parent">
+    <header class="header">
+      <audio controls="controls" loop="true" style="width: 0;height: 0;overflow: hidden;background-color: transparent;display: none;">
+                <source src="audio.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                <source src="audio.mp3" type="audio/mpeg" controls="controls">
+            </audio>
+            
+            <audio class="winner" style="width: 0;height: 0;overflow: hidden;background-color: transparent;display: none;">
+                <source src="dengi-Zvuk_vyigrysha.ogg" type="audio/ogg; codecs=vorbis" controls="controls">
+                <source src="dengi-Zvuk_vyigrysha.mp3"></source>
+            </audio>
+        <div class="logo">
+            
+            <img src="images/logo_last.svg" alt="">
+        </div>
+        <div class="welcome">
+            <img src="images/Welcome text.svg" alt="">
+        </div>
+        <div class="counter">
+            <div class="counter-heading">Подарков открыто: <span>0</span></div>
+            <div class="counter-faq" data-target="#myModal" data-toggle="modal">?</div>
+            <ul class="image-container">
+                <li>
+                    <img class="disabled" data-id="gift-1" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-2" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-3" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-4" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-5" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-6" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-7" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-8" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-9" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-10" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-11" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-12" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-13" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-14" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-15" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-16" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-17" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-18" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-19" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+                <li>
+                    <img class="disabled" data-id="gift-20" src="images/giftbox-tablo-interactive.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </header>
 <div class="new-year">
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -103,7 +206,7 @@
 
 
 
-
+    
 
 
 
@@ -112,3 +215,717 @@
 </div>
 
 
+</div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Добро пожаловать <br> <strong>в Новогоднюю страну MyCredit</strong></h4>
+                </div>
+                <div class="modal-body">
+                    Здесь мы спрятали для вас целый мешок подарков на любой вкус. Чтобы угадать, в каком из элементов спрятан ваш подарок кликайте на различные детали.
+                </div>
+                <div class="modal-footer">
+                    <p>Для навигации по сайту используйте скролл.</p>
+                    <div class="modal-icon">
+                        <svg class="icon icon-mouse-ico">
+                            <use xlink:href="#icon-mouse-ico"></use>
+                        </svg>
+                    </div>
+                    <button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Старт</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="gift-modal-1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/promo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NY25Gloves</div>
+                        <div class="promo-info">Промокодом можно воспользоваться неограниченное количество раз в любой момент до 30.04.2018
+</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="gift-modal-2" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/01-girobord.png" alt="">
+                            <div class="gift-name">Гироборд</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Гироборд UFT ZippyBoard Black</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="gift-modal-3" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/02-cap.png" alt="">
+                            <div class="gift-name">Smart-чашка</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Smart-чашка KeepCup</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-4" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/discount-40.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NYOrnament40</div>
+                        <div class="promo-info">Промокодом можно воспользоваться 1 раз в любой момент до 28.02.2018
+</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-5" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/04-vesy.png" alt="">
+                            <div class="gift-name">Смарт-весы Xiaomi</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Смарт-весы Xiaomi Mi Smart Scale</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-6" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/03-fitness-traker.png" alt="">
+                            <div class="gift-name">Фитнес-трекер Xiaomi</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Фитнес-трекер Xiaomi Mi Band 2 (OLED) White</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-7" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/05-monopod.png" alt="">
+                            <div class="gift-name">Монопод iOttie MiGo</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Монопод iOttie MiGo для смартфонов iOS/Android/GoPro (White)</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-8" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/promo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NY25Candle</div>
+                        <div class="promo-info">Промокодом можно воспользоваться неограниченное количество раз в любой момент до 28.02.2018
+</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-9" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/discount-30.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NYWish30</div>
+                        <div class="promo-info">Промокодом можно воспользоваться 1 раз в любой момент до 28.02.2018
+
+</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-10" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/discount-35.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NY35Fireplace</div>
+                        <div class="promo-info">Промокодом можно воспользоваться неограниченное количество раз в любой момент до 31.03.2018
+
+</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-11" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/06-game.png" alt="">
+                            <div class="gift-name">Игровой геймпад</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Игровой геймпад GameSir T1s</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-12" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/discount-50.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NY50Cracker</div>
+                        <div class="promo-info">Промокодом можно воспользоваться 1 раз в любой момент до 31.03.2018
+
+</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-13" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/07-pen.png" alt="">
+                            <div class="gift-name">3D ручка (набор)</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Набор 3D iSunLT4.0 Red (3D-ручка, раскраски, пластик 6шт)</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-14" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/08-kolonka.png" alt="">
+                            <div class="gift-name">Портативная колонка AIR MUSIC</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Портативная колонка AIR MUSIC FLIP (Black)</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-15" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/09-solar.png" alt="">
+                            <div class="gift-name">Портативная батарея Solar black</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Портативная батарея JKYO 8000mAh Solar black (JK-PBS01A)</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-16" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/discount-50.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NY50Tinsel</div>
+                        <div class="promo-info">Промокодом можно воспользоваться неограниченное количество раз в любой момент до 31.03.2018
+
+</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-17" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/discount-35.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NY35Berry</div>
+                        <div class="promo-info">Промокодом можно воспользоваться 1 раз в любой момент до 31.03.2018
+
+</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-18" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/discount-30.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NYMidnight30</div>
+                        <div class="promo-info">Промокодом можно воспользоваться неограниченное количество раз в любой момент до 28.02.2018
+
+</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gift-modal-19" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift" role="document">
+            <div class="modal-content modal-gift">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="gift-holder">
+                            <img src="/images/10-watch.png" alt="">
+                            <div class="gift-name">Смарт-часы Apple Watch</div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы участник розыгрыша
+                        <br>суперприза: <span>Смарт-часы Apple Watch Series 1 42mm Gold Aluminium Case with Midnight Blue Sport Band (ZKMQ122)</span>
+                        <p>Оставьте свои контакты для участия.</p>
+                        <form action="" class="form js_validate" data-id="">
+                            <input type="hidden" name="Action" value="test">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" required data-validate="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" name="tel" class="form-control" data-validate="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-success btn-lg js-btn-send">Участвовать</button>
+                            </div>
+                            <a href="">Подробнее</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="gift-modal-20" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--gift modal-dialog--promo" role="document">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt=""></button>
+            <div class="modal-content modal-promo">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="promo-wrapper">
+                            <img src="images/discount-40.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Поздравляем!</strong></h4>
+                        </div>
+                        Вы выиграли скидку по промокоду
+                        <p>Ваш промокод (скопируйте, чтобы не потерять)</p>
+                        <div class="promo-holder">NYReindeer40</div>
+                        <div class="promo-info">Промокодом можно воспользоваться неограниченное количество раз в любой момент до 28.02.2018</div>
+                        <a href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="mobile" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog--mobile" role="document">
+            <div class="modal-content modal-mobile text-center">
+                <div class="modal-mobile__heading"><strong>20 ценных подарков</strong> от MyCredit!</div>
+                <p>Хотите побывать в новогодней сказке MyCredit и получить 20 ценных подарков? </p>
+                <ul class="modal-mobile__icons">
+                    <li>
+                        <svg class="icon icon-ico-computer"><use xlink:href="#icon-ico-computer"></use></svg>
+                    </li>
+                    <li>
+                        <svg class="icon icon-ico-notebook"><use xlink:href="#icon-ico-notebook"></use></svg>
+                    </li>
+                    <li>
+                        <svg class="icon icon-ico-ipad"><use xlink:href="#icon-ico-ipad"></use></svg>
+                    </li>
+                </ul>
+                <p>Откройте эту страничку со своего настольного ПК, ноутбука или планшета.</p>
+                <img src="images/mobile-santa.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="final" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-final text-center">
+                <div class="modal-final__heading">Поздравляем!<strong>Вы нашли все припрятанные подарки</strong></div>
+                <div class="final-content">
+                    Розыгрыш призов состоится <br>
+                    <strong>17.01.2018 в 12:00</strong>
+                    <div class="final-btn">
+                        <a href="#">Подробнее</a>
+                    </div>
+                    <img src="images/santa-all-gifts.svg" alt="" class="final-left">
+                    <img src="images/elf-all-gifts.svg" alt="" class="final-right">
+                </div>
+                <p>Поделись своими результатами с друзьями:</p>
+                <ul class="final-social">
+                    <li>
+                        <a href="">
+                            <img src="images/vk.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/facebook.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="images/google.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

@@ -98,16 +98,17 @@ var components = {
 gulp.task('scripts', function() {
     return gulp.src([
             sourceDir + '/jquery-2.2.1.min.js',
-            sourceDir + '/bootstrap-select.js',
+            //sourceDir + '/bootstrap-select.js',
             sourceDir + '/jquery.maskedinput.min.js',
-            sourceDir + '/jquery.sameheight.js',
+            //sourceDir + '/jquery.sameheight.js',
             sourceDir + '/validate.js',
-            sourceDir + '/bootstrap.min.js',
-            sourceDir + '/jquery.mousewheel.js',
-            sourceDir + '/css3-animate-it.js',
-            sourceDir + '/svgfixer.js',
+            sourceDir + '/modal.js',
+            //sourceDir + '/jquery.mousewheel.js',
+            //sourceDir + '/css3-animate-it.js',
+            sourceDir + '/grayscale.js',
+            //sourceDir + '/svgfixer.js',
             sourceDir + '/svg.js',
-            sourceDir + '/swiper.js',
+            //sourceDir + '/swiper.js',
             sourceDir + '/functions.newyear.js',
             sourceDir + '/main.js'
         ])

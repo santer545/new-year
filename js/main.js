@@ -2,8 +2,8 @@ $('#myModal').modal('show');
 $(document).ready(function() {
 
 
-    main();
-    containerWidth();
+    //main();
+    //containerWidth();
     containerMove();
     tooltipShow();
     santaAnimate();
@@ -32,11 +32,11 @@ $(document).ready(function() {
 
 
 });
-$(document).resize(function() {
+/*$(document).resize(function() {
     containerWidth();
-});
+});*/
 
-function main() {
+/*function main() {
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
         freeMode: true,
@@ -45,16 +45,16 @@ function main() {
         },
         mousewheel: true,
     });
-}
+}*/
 
 
-function containerWidth() {
+//function containerWidth() {
 
-    var w = $('.new-year__item').width();
-    var containerWidth = (w * 4) + 1100;
+    //var w = $('.new-year__item').width();
+    //var containerWidth = (w * 4) + 1100;
     /*$('.new-year__list').css('width', containerWidth);*/
 
-}
+//}
 
 function containerMove() {
     var container = $('.swiper-slide').width();
