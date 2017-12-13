@@ -29,7 +29,7 @@ gulp.task('styles', function() {
     return gulp.src('sass/style.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({ style: 'expanded' }))
-        .pipe(autoprefixer('last 4 version'))
+        .pipe(autoprefixer('last 7 version'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/css'))
         .pipe(rename({ suffix: '.min' }))
@@ -107,6 +107,8 @@ gulp.task('scripts', function() {
             sourceDir + '/css3-animate-it.js',
             sourceDir + '/svgfixer.js',
             sourceDir + '/svg.js',
+            sourceDir + '/swiper.js',
+            sourceDir + '/functions.newyear.js',
             sourceDir + '/main.js'
         ])
 
